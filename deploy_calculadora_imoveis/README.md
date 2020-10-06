@@ -4,7 +4,10 @@ Para o deploy no Heroku, dois arquivos de configuração devem ser adicionados a
 
 ### `requirements.txt`
 
-Este é o arquivo mais importante pois nele há todos os bibliotecas do Python que devem ser instalados no servidor do Heroku. Nele precisamos colocar todas as importações que foram feitas ao longo do desenvolvimento de nosso código como numpy, scikit-learn e Flask. Todas dependências devem ser mencionadas, algumas serão descobertas por tentativa e erro durante o deploy no Heruku. 
+Este é o arquivo mais importante pois nele há todos os bibliotecas do Python que devem ser instalados no servidor do Heroku. 
+
+Nele precisamos colocar todas as importações que foram feitas ao longo do desenvolvimento de nosso código como numpy, scikit-learn e Flask.
+Todas as dependências do projeto devem ser mencionadas. 
 
 Para nosso app, o conteúdo do arquivo deverá ser o seguinte:
 ```
