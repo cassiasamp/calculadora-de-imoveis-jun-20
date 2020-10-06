@@ -1,4 +1,4 @@
-# deploy-awari-calculadora-imoveis
+# Deploy da calculadora de imóveis
 
 Para o deploy no Heroku, dois arquivos de configuração devem ser adicionados ao repositório:
 
