@@ -6,7 +6,7 @@ Para o deploy no Heroku, dois arquivos de configuração devem ser adicionados a
 
 Este é o arquivo mais importante pois nele há todos os bibliotecas do Python que devem ser instalados no servidor do Heroku. 
 
-Nele precisamos colocar todas as importações que foram feitas ao longo do desenvolvimento de nosso código como numpy, scikit-learn e Flask.
+Nele, precisamos colocar todas as importações que foram feitas ao longo do desenvolvimento de nosso código como numpy, scikit-learn e Flask.
 Todas as dependências do projeto devem ser mencionadas. 
 
 Para nosso app, o conteúdo do arquivo deverá ser o seguinte:
@@ -32,6 +32,6 @@ Vamos entender essa sintaxe. `web: gunicorn` vai chamar a biblioteca `gunicorn` 
 
 O mesmo é um servidor HTTP Python WSGI para UNIX bastante leve e amplamente compatível com várias estruturas da web. 
 
-O que vem em seguida são referentes ao nome do arquivo (que no nosso caso é `app.py`) e o nome da variável dentro do código na qual Flask foi inicializado, que no nosso casso se chama `app` também (dentro da sintaxe `app = Flask(__name__)`). 
+O que vem em seguida são referentes ao nome do arquivo (que no nosso caso é `app.py`) e o nome da variável dentro do código na qual o Flask foi inicializado, que no nosso casso se chama `app` também (dentro da sintaxe `app = Flask(__name__)`). 
 
 Se, por exemplo, o nome do arquivo fosse `calculadora_imoveis.py` e o nome da variável no código fosse `meu_app = Flask(__name__)`, a sintaxe passaria a ser: `web: gunicorn calculadora_imoveis:meu_app`.
